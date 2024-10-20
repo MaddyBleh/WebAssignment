@@ -5,9 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maddy Sherriff</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
+    <!-- Font Awesome Icon Pack -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Defer makes JS wait for page load -->
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    
+    <div id="top-bar">
+        <i class="fa fa-newspaper-o" aria-hidden="true"></i><a href="https://example.com">In the News</a>
+    </div>
+    <div id="main-container">
+        <header>
+            <div id="banner">
+                <h1>Daily Online News</h1>
+            </div>
+        </header>
+        <nav>
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="https://example.com/">Home</a>
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="https://example.com/">World</a>
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="https://example.com/">Weather</a>
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="https://example.com/">Sport</a>
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="https://example.com/">Politics</a>
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="https://example.com/">Tech</a>
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="https://example.com/">Entertainment</a>
+        </nav>
+        <div id="content">
+            <div id="main-grid">
+                <h4 class="grid-header 2colspan">Hot</h4>
+                <div class="grid-content" id="grid-image">
+                    <img src="img\people.jpg" alt="4 women standing together">
+                </div>
+                <div class="grid-content" id="grid-text">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                </div>
+                <div class="grid-content" id="grid-links">
+                    <ul>
+                        <li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="https://example.com/">Lorem ipsum dolor sit</a></li>
+                        <li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="https://example.com/">Lorem ipsum dolor sit</a></li>
+                        <li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="https://example.com/">Lorem ipsum dolor sit</a></li>
+                        <li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="https://example.com/">Lorem ipsum dolor sit</a></li>
+                        <li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="https://example.com/">Lorem ipsum dolor sit</a></li>
+                        <li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="https://example.com/">Lorem ipsum dolor sit</a></li>
+                        <li><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="https://example.com/">Lorem ipsum dolor sit</a></li>
+                    </ul>
+                </div>
+                <div class="grid-content" id="grid-nested">
+                    <div id="subgrid">
+                        <div class="subgrid-content" id="showXY">
+                            <button>Display X, Y</button>
+                        </div>
+                        <div class="subgrid-content" id="changeTheme">
+                            <button>Theme</button>
+                        </div>
+                        <div class="subgrid-content" id="modalDisplay">
+                            <button>Modal</button>
+                        </div>
+                        <div class="subgrid-content" id="swapImage">
+                            <button>Swap Image</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-content" id="grid-table">
+                    <table>
+                        <thead>
+                            <th colspan="3">Table Data</th>
+                        </thead>
+                        <tbody>
+                            <!-- 1 2 3 4 5 -->
+                            <tr>
+                                <td rowspan="2">1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>5</td>
+                            </tr>
+                            <!-- 6 7 8 9 10 -->
+                            <tr>
+                                <td>6</td>
+                                <td rowspan="2">7</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <!-- 11 12 13 14 15 -->
+                            <tr>
+                                <td>11</td>
+                                <td>12</td>
+                                <td rowspan="2">13</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>15</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="grid-content" id="grid-map">
+                    <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=175.60752868652347%2C-40.35603683821892%2C175.6198883056641%2C-40.34843295947496&amp;layer=mapnik&amp;marker=-40.352235006020514%2C175.61370849609375" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=-40.352235&amp;mlon=175.613708#map=17/-40.352235/175.613708">View Larger Map</a></small>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Madeline Sherriff. (Developed in Firefox)</p>
+    </footer>
 </body>
 </html>
