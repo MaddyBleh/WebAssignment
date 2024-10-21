@@ -1,0 +1,184 @@
+/* Variables for JS */
+:root {
+    --backgroundColor: #428bca;
+}
+
+/* General Tags */
+html {
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: black;
+}
+
+nav {
+    padding: 10px 0px 10px 0px;
+}
+
+nav > a {
+    vertical-align: middle;
+}
+
+nav > i {
+    color: red;
+}
+
+iframe {
+    width: auto;
+    height: 130px;    
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: lightsalmon;
+}
+
+tbody {
+    background-color: lightgoldenrodyellow;
+}
+
+tfoot {
+    background-color: lightgray;
+}
+
+button {
+    background-color: var(--backgroundColor);
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 25px;
+}
+
+footer {
+    background-color: var(--backgroundColor);
+    border-radius: 0px 0px 10px 10px;
+    padding: 5px 20px;
+}
+
+footer > p {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+
+/* IDs & specific instances of tags */
+
+/* Top Bar */
+#top-bar {
+    padding: 10px;
+    margin: 0px;
+    background-color: var(--backgroundColor);
+    width: 100%;
+}
+
+#top-bar > a {
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+}
+
+#top-bar > i {
+    vertical-align: middle;
+}
+
+/* Main Container area */
+#main-container {
+    width: 1000px;
+    margin: auto;
+}
+
+/* Banner */
+#banner {
+    background-image: url("../img/background.jpg");
+    /* background-color: var(--backgroundColor); Incase image fails to load */
+    padding: 20px;
+    margin: 0px;
+}
+
+#banner > h1 {
+    vertical-align: middle;
+}
+
+/* Main Grid */
+#main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+/* Individual grid items */
+#grid-image > img {
+    width: 100%;
+    padding: 0px;
+}
+
+#grid-text > p, #grid-links > p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+#subgrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin: 0px;
+    padding: 2px 0px 0px 0px;
+    grid-gap: 10px;
+    vertical-align: middle;
+}
+
+/* Classes */
+.grid-header {
+    background-color: var(--backgroundColor);
+    padding: 5px 20px;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.grid-content {
+    padding: 10px;
+    border: 10px solid #d3d3d3;
+    margin-bottom: 10px;
+}
+
+.colspan2 {
+    margin: 0px;
+    grid-column: 1 / 3;
+}
+
+.colspan1 {
+    margin: 0px;
+}
