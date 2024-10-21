@@ -1,6 +1,6 @@
 /* Variables for JS */
 :root {
-    --backgroundColor: #428bca;
+    --bgColor: #428bca;
 }
 
 /* General Tags */
@@ -15,6 +15,10 @@ html {
 body {
     padding: 0px;
     margin: 0px;
+}
+
+h4 {
+    padding: 5px 20px;
 }
 
 a {
@@ -67,7 +71,7 @@ tfoot {
 }
 
 button {
-    background-color: var(--backgroundColor);
+    background-color: var(--bgColor);
     border-radius: 4px 4px 4px 4px;
     border: none;
     text-align: center;
@@ -77,8 +81,12 @@ button {
     padding: 26px;
 }
 
+button:hover {
+    background-color: darkgrey;
+}
+
 footer {
-    background-color: var(--backgroundColor);
+    background-color: var(--bgColor);
     border-radius: 0px 0px 10px 10px;
     padding: 5px 20px;
 }
@@ -93,11 +101,34 @@ footer > p {
 
 /* IDs & specific instances of tags */
 
+/* Modal */
+#modal {
+    z-index: 1;
+    width: 100%;
+    display: none;
+    position: fixed;
+    padding: 50px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#modal-content {
+    margin: 10px auto;
+    width: 500px;
+    padding: 10px;
+    border: 10px solid #d3d3d3;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#modal-content > img {
+    width: 100%;
+}
+
 /* Top Bar */
 #top-bar {
     padding: 10px;
     margin: 0px;
-    background-color: var(--backgroundColor);
+    background-color: var(--bgColor);
     width: 100%;
 }
 
@@ -122,7 +153,7 @@ footer > p {
 /* Banner */
 #banner {
     background-image: url("../img/background.jpg");
-    /* background-color: var(--backgroundColor); Incase image fails to load */
+    /* background-color: var(--bgColor); Incase image fails to load */
     padding: 20px;
     margin: 0px;
 }
@@ -164,7 +195,7 @@ footer > p {
 
 /* Classes */
 .grid-header {
-    background-color: var(--backgroundColor);
+    background-color: var(--bgColor);
     padding: 5px 20px;
     border-radius: 0px 10px 0px 0px;
 }
