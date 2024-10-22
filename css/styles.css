@@ -76,9 +76,10 @@ button {
     border: none;
     text-align: center;
     color: white;
-    font-weight: bold;
-    width: 100%;
-    padding: 26px;
+    font-size: 14px;
+    width: auto;
+    margin: 0px;
+    padding: 30px;
 }
 
 button:hover {
@@ -171,9 +172,12 @@ footer > p {
 }
 
 /* Individual grid items */
+#grid-image {
+    padding-bottom: 7px;
+}
+
 #grid-image > img {
     width: 100%;
-    padding: 0px;
 }
 
 #grid-text > p, #grid-links > p {
@@ -188,7 +192,7 @@ footer > p {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     margin: 0px;
-    padding: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     grid-gap: 10px;
     vertical-align: middle;
 }
