@@ -91,25 +91,19 @@ function modalShow() {
     }
 }
 
+// Set image array and index
+const images = ['people.jpg', 'sports.jpg', 'business.jpg'];
+let index = 0
+
 // swapImage
 function swapImage() {
-    // Array of the live server urls. This is the only way I can get it to work.
-    let images = ['http://127.0.0.1:5500/img/business.jpg', 'http://127.0.0.1:5500/img/people.jpg', 'http://127.0.0.1:5500/img/sports.jpg'];
     let image = document.getElementById('image'); // Get the image element
     let modalImage = document.getElementById('modal-image'); // Get the modal-image element
-    if (image.src == images[0]) {
-        // console.log('swap to people');
-        image.src = 'img/people.jpg';
-        modalImage.src = 'img/people.jpg';
-    }
-    else if (image.src == images[1]) {
-        // console.log('swap to sports');
-        image.src = 'img/sports.jpg';
-        modalImage.src = 'img/sports.jpg';
-    }
-    else {
-        // console.log('swap to business');
-        image.src = 'img/business.jpg';
-        modalImage.src = 'img/business.jpg';
+    
+    image.src = `img/${images[index]}`;
+    modalImage.src = `īmg/${images[index]}`;
+    index++;
+    if (index >= images.length) {
+        index = 0;
     }
 }

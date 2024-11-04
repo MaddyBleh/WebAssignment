@@ -76,10 +76,10 @@ button {
     border: none;
     text-align: center;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
     width: auto;
     margin: 0px;
-    padding: 28px;
+    padding: 29.5px;
 }
 
 button:hover {
